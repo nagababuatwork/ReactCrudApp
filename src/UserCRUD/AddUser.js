@@ -125,25 +125,6 @@ class AddUser extends React.Component {
                   placeholder="MobileNo" />
                   {submitted && !this.state.mobileNo &&  <div className="help-block">MobileNo  is required</div> }
               </Form.Group>
-              {/* <Form.Group controlId="address">
-                <Form.Label>Address</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="address"
-                  value={this.state.address}
-                  onChange={this.handleChange}
-                  placeholder="Address" />
-              </Form.Group> */}
-
-              {/* <Form.Group controlId="pinCode">
-                <Form.Label>PinCode</Form.Label>
-                <Form.Control
-                  type="text"
-                  name="pinCode"
-                  value={this.state.pinCode}
-                  onChange={this.handleChange}
-                  placeholder="PinCode" />
-              </Form.Group> */}
               <Form.Group>
                 <Form.Control type="hidden" name="UserId" value={this.state.userId} />
                 <Button variant="success" type="submit">{actionStatus}</Button>&nbsp;   

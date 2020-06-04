@@ -12,7 +12,6 @@ class UserList extends React.Component{
            error:null,
            users:[],
            response: {}
-            
         }
     }
 
@@ -28,7 +27,6 @@ class UserList extends React.Component{
             }
         )
     }
-
     
     deleteUser(userId) {
       const { users } = this.state;   
@@ -52,7 +50,6 @@ class UserList extends React.Component{
         {
             return(
          <div>
-               
                   <Table>
                     <thead className="btn-primary">
                       <tr>
@@ -61,8 +58,6 @@ class UserList extends React.Component{
                         <th>User Name</th>
                         <th>Email</th>
                         <th>MobileNo</th>
-                       
-                       
                         <th>Action</th>
                       </tr>
                     </thead>
@@ -76,7 +71,6 @@ class UserList extends React.Component{
                           <td>{user.mobileNo}</td>
                           <td><Button variant="info" onClick={() => this.props.editUser(user.userId)}>Edit</Button>  &nbsp;&nbsp;&nbsp;
                           <Button variant="danger" onClick={() => this.deleteUser(user.userId)}>Delete</Button>
-                        
                           </td>
                         </tr>
                       ))}
